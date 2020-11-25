@@ -5,11 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void NextScene (string scene)
+    public void LoadScene1()
     {
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene("WelcomeScene");
     }
 
+    public void LoadScene2()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
 
-
+    public void LoadScene3()
+    {
+        SceneManager.LoadScene("FinishScene");
+    }
 }
+
+
+
